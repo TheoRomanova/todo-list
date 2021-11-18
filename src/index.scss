@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #77acf1;
+  font-family: 'Benne', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+ justify-content: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  margin: 0 auto;
+  height: 60px;
+  width: 200px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(100, 174, 226);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  &:hover {
+    background-color: #7868e6;
+  }
+}
