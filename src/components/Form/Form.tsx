@@ -1,5 +1,5 @@
 import "./styles.scss";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { colors } from "./colors";
@@ -12,7 +12,7 @@ export const Form = () => {
 
   const dispatch = useDispatch();
 
-  const handleClick = (value: string) => {
+  const handleClickAdd = (value: string) => {
     if (value) {
       let newTodo: TodoItem = {
         name: value.toUpperCase(),
@@ -26,12 +26,15 @@ export const Form = () => {
   };
 
   return (
-    <div className="main-notes-wrapper">
-      <h1>FORM</h1>
-      <div className="input-wrapper">
-        <input value={todo} onChange={(e) => setTodo(e.target.value)}></input>
-        <button onClick={() => handleClick(todo)}>+</button>
+    <div className="main-form-wrapper">
+      <div className="main-notes-wrapper">
+        <h1>FORM</h1>
+        <div className="input-wrapper">
+          <input value={todo} onChange={(e) => setTodo(e.target.value)}></input>
+          <button onClick={() => handleClickAdd(todo)}>+</button>
+        </div>
       </div>
+      <button onClick={() => history.push("/todos")}>TODOS</button>
     </div>
   );
 };
