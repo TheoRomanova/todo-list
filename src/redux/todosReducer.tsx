@@ -1,4 +1,4 @@
-import { ADD_TODO, DELETE_TODO } from "./actionTypes";
+import { ADD_TODO, DELETE_TODO, EDIT_TODO } from "./actionTypes";
 
 interface Action {
   type: string;
@@ -31,6 +31,16 @@ export const todosReducer = (state = initialState, action: Action) => {
       return {
         ...state,
         todos: state.todos.filter((item) => item.id !== action.payload.id),
+      };
+    case EDIT_TODO:
+      const updatedArray = [...state.todos];
+      const editedItem = state.todos.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      updatedArray[editedItem].name = action.payload.value;
+      return {
+        ...state,
+        todos: updatedArray,
       };
     default:
       return state;
