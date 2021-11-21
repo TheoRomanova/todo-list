@@ -1,0 +1,22 @@
+
+.main-home-wrapper {
+  display: flex;
+  flex-direction: column;
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 20px -15px 10px 5px rgba(3, 1, 1, 0.1);
+    background-color: #fbc6a4;
+  
+    span {
+      margin: 0 auto 20px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #5a91d8;
+    }
+  }
+}
