@@ -1,0 +1,35 @@
+.todo-wrapper {
+    display: flex;
+    flex-direction: row;
+    
+    input {
+      padding: 15px;
+      margin: 5px auto;
+      margin-right: 20px;
+      width: 80%;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 25px;
+      text-align: center;
+      color: white;
+      border: none;
+      outline: none;
+      color: white;
+      box-shadow: 20px -15px 10px 5px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        color: rgb(228, 23, 255);
+      }
+    }
+
+    i {
+      margin: auto auto auto 0;
+      cursor: pointer;
+      color: hotpink;
+ 
+      &:hover {
+        color: rgb(212, 67, 140);
+      }
+    }
+}

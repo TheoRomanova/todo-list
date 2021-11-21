@@ -1,0 +1,26 @@
+.form-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      height: 50px;
+      width: 50px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(186, 164, 248);
+      &:hover {
+        background-color: rgb(169, 143, 241);
+      }
+    }
+    input {
+      padding: 10px;
+      border-radius: 10px;
+      margin-right: 20px;
+      text-align: center;
+      font-size: 20px;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      color: rgb(169, 143, 241);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
